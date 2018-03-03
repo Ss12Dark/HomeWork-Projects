@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ss12dark.homeproject.MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/maxParent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center|top">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/matrix"
+    android:textColor="@color/black"
+    android:textSize="60sp"/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/upperPart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/upper_part"
+                android:onClick="upper"/>
+
+            <Button
+                android:id="@+id/diagonals"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/diagonals"
+                android:onClick="diagonals"/>
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/bottomPart"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/bottom_part"
+                android:onClick="bottom"
+                />
+
+            <Button
+                android:id="@+id/borders"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="@string/borders"
+                android:onClick="borders"/>
+        </LinearLayout>
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/input_number_between_3_and_100"
+            android:inputType="number"/>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TableLayout
+            android:id="@+id/table"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="*"
+            android:stretchColumns="*"
+            >
+
+
+        </TableLayout>
+        </ScrollView>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

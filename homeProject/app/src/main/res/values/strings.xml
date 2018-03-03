@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">homeProject</string>
+    <string name="matrix">Matrix</string>
+    <string name="borders">Borders</string>
+    <string name="diagonals">Diagonals</string>
+    <string name="upper_part">Upper Part</string>
+    <string name="bottom_part">Bottom Part</string>
+    <string name="input_number">input number</string>
+    <string name="input_number_between_3_and_100">input_number between 3 and 100</string>
+</resources>
